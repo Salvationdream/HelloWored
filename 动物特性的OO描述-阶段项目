@@ -1,0 +1,24 @@
+package testexception;
+
+import java.util.Scanner;
+
+public class TestMismatchException {
+	public static void main(String[] args) {
+		Scanner in=new Scanner(System.in);
+		int a;
+		try {
+			a=in.nextInt();
+			System.out.println(a);
+		} catch (Exception e) {  //捕获  Exception e  这是错误的类别
+			// TODO 自动生成的 catch 块
+			System.out.println("你输错了，请输入不带小数的数值");
+		}
+	}
+}
+
+
+
+
+
+
+
